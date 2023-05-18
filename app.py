@@ -7,7 +7,7 @@ from langchain.agents import initialize_agent,load_tools,AgentType
 
 #setting up openai api key
 import os
-os.environ['OPENAI_API_KEY'] = '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'
+os.environ['OPENAI_API_KEY'] = ''
 
 #setting up streamlit title
 st.title("LangChain Wikipedia Bot")
