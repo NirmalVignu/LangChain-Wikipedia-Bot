@@ -12,7 +12,7 @@ os.environ['OPENAI_API_KEY'] = ''
 #setting up streamlit title
 st.title("LangChain Wikipedia Bot")
 
-#setting up langchain agent
+#setting up custom langchain agent
 llm=OpenAI(temperature=0)
 tools=load_tools(['wikipedia'],llm=llm)
 agent=initialize_agent(tools,llm,agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION,verbose=True)
